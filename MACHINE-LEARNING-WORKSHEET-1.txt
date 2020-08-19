@@ -1,0 +1,119 @@
+MACHINE LEARNING 
+WORKSHEET – 1 
+ 
+In Q1 to Q7, only one option is correct, Choose the correct option: 
+
+1. The value of correlation coefficient will always be: 
+A) between 0 and 1 	 	 	B) greater than -1 
+C) between -1 and 1 	 	 	D) between 0 and -1 
+Answer 1.-C
+               
+2. Which of the following cannot be used for dimensionality reduction? 
+A) Lasso Regularisation  	 	B) PCA 
+C) Recursive feature elimination 	D) Ridge Regularisation  
+ Answer 2.-  C
+
+3.  Which of the following is not a kernel in Support Vector Machines? 
+A) linear 	 	 	B) Radial Basis Function 
+C) hyperplane  	 	 	D) polynomial 
+Answer 3.- C
+
+4. Amongst the following, which one is least suitable for a dataset having non-linear decision boundaries? 
+A) Logistic Regression  	 	B) Naïve Bayes Classifier 
+C) Decision Tree Classifier 	 	D) Support Vector Classifier 
+Answer 4.- D
+
+5. In a Linear Regression problem, ‘X’ is independent variable and ‘Y’ is dependent variable, where ‘X’ represents weight in pounds. If you convert the unit of ‘X’ to kilograms, then new coefficient of ‘X’ will be?  
+(1 kilogram = 2.205 pounds) 
+A) 2.205 × old coefficient of ‘X’ 	 	B) same as old coefficient of ‘X’ 
+C) old coefficient of ‘X’ ÷ 2.205 	 	D) Cannot be determined 
+Answer 5. - C
+
+6. As we increase the number of estimators in ADABOOST Classifier, what happens to the accuracy of the model? 
+A) remains same 	 	 	B) increases 
+C) decreases 	 	 	 	D) none of the above 
+Answer 6.- B
+
+7. Which of the following is not an advantage of using random forest instead of decision trees? 
+A) Random Forests reduce overfitting 
+B) Random Forests explains more variance in data then decision trees 
+C) Random Forests are easy to interpret 
+D) Random Forests provide a reliable feature importance estimate 
+Answer 7.- C
+
+In Q8 to Q10, more than one options are correct, Choose all the correct options: 
+8. Which of the following are correct about Principal Components? 
+A) Principal Components are calculated using supervised learning techniques
+B) Principal Components are calculated using unsupervised learning techniques 
+C) Principal Components are linear combinations of Linear Variables. 
+D) All of the above 
+Answer 8.-  B and C
+
+9. Which of the following are applications of clustering? 
+A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty index, employment rate, population and living index 
+B) Identifying loan defaulters in a bank on the basis of previous years’ data of loan accounts. 
+C) Identifying spam or ham emails 
+D) Identifying different segments of disease based on BMI, blood pressure, cholesterol, blood sugar levels. 
+Answer 9.- A, B, C and D
+
+10. Which of the following is(are) hyper parameters of a decision tree? 
+A) max_depth  	 	 	B) max_features 
+C) n_estimators  	 	 	D) min_samples_leaf
+Answer 10. – A, B and D
+
+Q11 to Q15 are subjective answer type questions, Answer them briefly. 
+
+11. What are outliers? Explain the Inter Quartile Range(IQR) method for outlier detection. 
+
+Ans.11    Outliers: - Outliers are the data points that are far from other data points. In other words, a value that lies outside of the most of the values in given 
+                      dataset. For eg. (2,3,4,5,6,87,67), here 87 and 67 are outliers.
+
+          Inter Quartile Range(IQR) for outlier detection: - 
+                      This is done using these steps: -
+                      1. Calculate the interquartile range (IQR) for the data by formula-
+                         IQR = Q3-Q1 (Q3 and Q1 represent one quarter and three quarters of the way through the list of all data)
+                      2. Multiply the interquartile range (IQR) by 1.5 (a constant used to discern outliers).
+                      3. Add 1.5 x (IQR) to the third quartile. Any number greater than this is a suspected outlier.
+                      4. Subtract 1.5 x (IQR) from the first quartile. Any number less than this is a suspected outlier.
+
+
+12 What is the primary difference between bagging and boosting algorithms? 
+
+Ans.12   Bagging: - Aim to decrease variance, not bias.
+
+         Boosting: -Aim to decrease bias not variance.
+
+13 What is adjusted R2 in logistic regression. How is it calculated? 
+
+Ans 13. Adjusted R^2 in logistic regression: - 
+        We use adjusted R-squared to compare the goodness-of-fit for regression models that contain differing   numbers of independent variables.
+        Let’s say you are comparing a model with five independent variables to a model with one variable and the five variable model has a higher R-squared.
+        Is the model with five variables actually a better model, or does it just have more variables? To determine this, just compare the adjusted R-squared values.
+        The adjusted R-squared adjusts for the number of terms in the model. Importantly, its value increases only when the new term improves the model fit more than 
+        expected by chance alone. 
+        The adjusted R-squared value actually decreases when the term doesn’t improve the model fit by a sufficient amount.
+
+       Adjusted R^2 Value Calculation:
+       Adjusted R-squared value can be calculated based on value of r-squared, number of independent variables (predictors), total sample size. 
+       Every time you add an independent variable to a model, the R-squared increases, even if the independent variable is insignificant. It never declines.
+
+
+14 What is the difference between standardisation and normalisation? 
+
+Ans 14. Normalization typically means rescales the values into a range of [0,1]. 
+        Standardization typically means rescales data to have a mean of 0 and a standard deviation of 1 (unit variance).
+
+15 What is cross-validation? Describe one advantage and one disadvantage of using cross-validation. 
+ 
+Ans 15. –Cross Validation: - Cross-validation is a technique in which we train our model using the subset of the data-set and then evaluate using the
+                             complementary subset of the data-set.
+
+                             The three steps involved in cross-validation are as follows:
+                             1.Reserve some portion of sample data-set.
+                             2.Using the rest data-set train the model.
+                             3.Test the model using the reserve portion of the data-set. 
+
+                             Advantage of Cross Validation: More “efficient” use of data as every observation is used for both training and testing.
+
+                             Disadvantage of Cross Validation: There are chances that you might miss out some observations whereas you might select some observations
+                                                               more than once. Under such circumstances, the validation subsets could overlap. 
